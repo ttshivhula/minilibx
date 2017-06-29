@@ -47,8 +47,7 @@ Ce dépot est un mirroir pour la librairie graphique *minilibx*.
 
 Minilibx est une librairie graphique très basique écrite en C utilisée à
 [42](https://42.fr) (aussi exporté aux USA dans la Silicon Valley, voir [42
-US](https://42.us.org)) et à [Epitech](http://www.epitech.eu) pour les projets
-d'infographie tel que *fdf* et *Raytracer*.
+US](https://42.us.org)) et à [Epitech](http://www.epitech.eu)
 
 Vous pouvez trouver un mirroir pour la version native pour Mac OSX
 [ici](https://github.com/dannywillems/minilibx-mac-osx).
