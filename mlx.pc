@@ -1,0 +1,12 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: MiniLibX
+Description: Simple X-Window Interface Library for students
+Version: 2014-01-06
+URL: https://projects.intrav2.42.fr/fdf/mine
+Requires.private: xext x11 libbsd
+Libs: -L${libdir} -lmlx
+Cflags: -I${includedir}
