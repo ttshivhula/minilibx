@@ -12,7 +12,7 @@
 #include	"mlx_int.h"
 
 extern int	(*(mlx_int_param_event[]))();
-
+//TODO: Fix graphics library issue on Ubuntu
 
 int		mlx_loop(t_xvar *xvar)
 {
