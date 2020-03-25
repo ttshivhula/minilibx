@@ -15,7 +15,7 @@ INC		=	%%%%
 HT		=	%%%%
 DOCP	=	%%%%
 
-CC		=	gcc
+CC		=	clang
 
 NAME	=	libmlx.a
 

@@ -14,7 +14,7 @@ INC		=	/usr/include
 HT		=	Linux
 DOCP	=	do_cp
 
-CC		=	gcc
+CC		=	clang
 
 NAME	=	libmlx.a
 
