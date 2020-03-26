@@ -10,6 +10,7 @@
 
 
 #include	"mlx_int.h"
+#include <string.h>
 
 extern struct s_col_name mlx_col_name[];
 
@@ -40,7 +41,26 @@ char	*mlx_int_get_line(char *ptr,int *pos,int size)
   return (ptr+pos4);
 }
 
+size_t  ft_strlcpy(char *dest, const char *src, size_t size)
+{
+        size_t  len_src;
+        size_t  i;
 
+        i = 0;
+        len_src = strlen(src);
+        if (!dest && size == 0)
+                return (len_src);
+        if (size > 0)
+        {
+                while (src[i] && i < size - 1)
+                {
+                        dest[i] = src[i];
+                        i++;
+                }
+                dest[i] = '\0';
+        }
+        return (len_src);
+}
 
 char	*mlx_int_static_line(char **xpm_data,int *pos,int size)
 {
@@ -59,7 +79,7 @@ char	*mlx_int_static_line(char **xpm_data,int *pos,int size)
       len = len2;
     }
   /* strcpy(copy,str); */
-  strlcpy(copy, str, len2+1);
+  ft_strlcpy(copy, str, len2+1);
   return (copy);
 }
 

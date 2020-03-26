@@ -4,7 +4,7 @@ INC=%%%%
 
 INCLIB=$(INC)/../lib
 
-CC=gcc
+CC=clang
 
 CFLAGS= -I$(INC) -O3 -I..
 
