@@ -45,7 +45,8 @@ SRC		=	mlx_init.c \
 			mlx_int_set_win_event_mask.c \
 			mlx_hook.c \
 			mlx_rgb.c \
-			mlx_destroy_image.c
+			mlx_destroy_image.c \
+			mlx_get_screen_size.c
 
 OBJ		=	$(SRC:.c=.o)
 CFLAGS	=	-O3 -I$(INC)
@@ -62,7 +63,7 @@ do_cp:
 	cp $(NAME) libmlx_$(HT).a
 
 clean:
-	rm -f $(OBJ) $(NAME) *~ core *.core
+	rm -f $(OBJ) $(NAME) *~ core *.core libmlx_$(HT).a
 
 install:
 	mkdir -p $(DESTDIR)/lib && cp $(NAME) $(DESTDIR)/lib
