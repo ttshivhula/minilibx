@@ -41,7 +41,7 @@ char	*mlx_int_get_line(char *ptr,int *pos,int size)
   return (ptr+pos4);
 }
 
-size_t  ft_strlcpy(char *dest, const char *src, size_t size)
+size_t  _ft_strlcpy(char *dest, const char *src, size_t size)
 {
         size_t  len_src;
         size_t  i;
@@ -79,7 +79,7 @@ char	*mlx_int_static_line(char **xpm_data,int *pos,int size)
       len = len2;
     }
   /* strcpy(copy,str); */
-  ft_strlcpy(copy, str, len2+1);
+  _ft_strlcpy(copy, str, len2+1);
   return (copy);
 }
 
